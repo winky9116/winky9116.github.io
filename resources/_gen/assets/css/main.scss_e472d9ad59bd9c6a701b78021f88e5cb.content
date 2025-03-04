@@ -311,10 +311,6 @@ body [data-aos="zoom-in"] {
   content: "\e615";
 }
 
-.icon-linkedin:before {
-  content: "\e614";
-}
-
 .icon-email:before {
   content: "\e63c";
 }
