@@ -23,11 +23,11 @@
   
 
 <title>
-  Category | Le Phu Duc
+  Category | Yuki Shiroi
 </title>
 <meta
   name="description"
-  content="a.k.a Jinn"
+  content="a.k.a winky"
 />
 
 
@@ -89,31 +89,17 @@
   
 
   
-  
-  
     
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
   rel="preload"
   as="style"
-  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7cUbuntu%20Mono:400,400italic,700,700italic%7cSource%20Code%20Pro:400,400italic,700,700italic%7cJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
 />
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7cUbuntu%20Mono:400,400italic,700,700italic%7cSource%20Code%20Pro:400,400italic,700,700italic%7cJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
   media="print"
   onload="this.media='all'"
 />
@@ -133,10 +119,20 @@
 
 
 
+  
 
 
 
-<link rel="alternate" type="application/rss+xml" href="//192.168.1.27:1313/categories/index.xml" title="You just landed on Jinn's site, let's find out..">
+
+
+
+ <link rel="stylesheet" href="/css/loader.css" />
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="//192.168.1.27:1313/categories/index.xml" title="Welcome to my site. I'm winky 👋">
 
 
 <link rel="shortcut icon" href="/favicon/favicon.ico">
@@ -219,6 +215,44 @@
   </head>
   <body>
     
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <img src="/images/loading.png" alt="loading" />
+        
+      </div>
+      <div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
 
 <div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
 </div>
@@ -242,15 +276,6 @@
       <span class="main-nav-link-wrap">
         <div class='main-nav-icon icon '>
           
-            &#xe628;
-          
-        </div>
-        <a class="main-nav-link" href="/about">About</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class='main-nav-icon icon '>
-          
             &#xe604;
           
         </div>
@@ -260,10 +285,10 @@
       <span class="main-nav-link-wrap">
         <div class='main-nav-icon icon '>
           
-            &#xe621;
+            &#xe628;
           
         </div>
-        <a class="main-nav-link" href="/achievements">Achievements</a>
+        <a class="main-nav-link" href="/about">About</a>
       </span>
     
     <a id="main-nav-toggle" class="nav-icon"></a>
@@ -280,18 +305,9 @@
   
     <picture>
       
-        
-          <source media="(max-width: 479px)" srcset="/images/newjeans3.jpg">
-        
-          <source media="(max-width: 799px)" srcset="/images/newjeans3.jpg">
-        
-          <source media="(min-width: 800px)" srcset="/images/newjeans3.jpg">
-        
-        <img fetchpriority="high" src="/images/newjeans3.jpg" alt="Categories">
-      
     </picture>
     
-      <img src="" alt="Categories" style="visibility: hidden;">
+      <img fetchpriority="high" src="/images/banner.png" alt="Categories">
     
   
 
@@ -337,13 +353,13 @@
         
 <div class="sidebar-author">
   <img
-    data-src="/avatar/shiba.jpg"
+    data-src="/avatar/i.jpg"
     data-sizes="auto"
-    alt="Le Phu Duc"
+    alt="Yuki Shiroi"
     class="lazyload"
   />
-  <div class="sidebar-author-name">Le Phu Duc</div>
-  <div class="sidebar-description">a.k.a Jinn</div>
+  <div class="sidebar-author-name">Yuki Shiroi</div>
+  <div class="sidebar-description">a.k.a winky</div>
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
@@ -364,19 +380,19 @@
 </div>
 <div class="sidebar-social">
   
-    <div class="icon-discord sidebar-social-icon">
+    <div class="icon-email sidebar-social-icon">
       <a
-        href="https://discordapp.com/users/lephuduc"
+        href="mailto:hello@voquangvu09112006@gmail.com"
         itemprop="url"
         target="_blank"
-        aria-label="discord"
+        aria-label="email"
         rel="noopener external nofollow noreferrer"
       ></a>
     </div>
   
     <div class="icon-facebook sidebar-social-icon">
       <a
-        href="https://www.facebook.com/lephuduc0309"
+        href="https://www.facebook.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="facebook"
@@ -386,7 +402,7 @@
   
     <div class="icon-github sidebar-social-icon">
       <a
-        href="https://github.com/lephuduc"
+        href="https://github.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="github"
@@ -396,7 +412,7 @@
   
     <div class="icon-instagram sidebar-social-icon">
       <a
-        href="https://www.instagram.com/le.phuduc"
+        href="https://www.instagram.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="instagram"
@@ -404,19 +420,9 @@
       ></a>
     </div>
   
-    <div class="icon-linkedin sidebar-social-icon">
-      <a
-        href="https://www.linkedin.com/in/lephuduc"
-        itemprop="url"
-        target="_blank"
-        aria-label="linkedin"
-        rel="noopener external nofollow noreferrer"
-      ></a>
-    </div>
-  
     <div class="icon-twitter sidebar-social-icon">
       <a
-        href="https://twitter.com/lephuduck"
+        href="https://x.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="twitter"
@@ -444,20 +450,6 @@
     <div class="sidebar-menu-link-wrap">
       <a
         class="sidebar-menu-link-dummy"
-        href="/about"
-        aria-label="About"
-      ></a>
-      <div class='sidebar-menu-icon icon '>
-        
-          &#xe628;
-        
-      </div>
-      <div class="sidebar-menu-link">About</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a
-        class="sidebar-menu-link-dummy"
         href="/archives"
         aria-label="Archives"
       ></a>
@@ -472,15 +464,15 @@
     <div class="sidebar-menu-link-wrap">
       <a
         class="sidebar-menu-link-dummy"
-        href="/achievements"
-        aria-label="Achievements"
+        href="/about"
+        aria-label="About"
       ></a>
       <div class='sidebar-menu-icon icon '>
         
-          &#xe621;
+          &#xe628;
         
       </div>
-      <div class="sidebar-menu-link">Achievements</div>
+      <div class="sidebar-menu-link">About</div>
     </div>
   
 </div>
@@ -795,10 +787,10 @@
   <div id="footer-info">
     <div>
       <span class="icon-copyright"></span>
-      2022 -
+      2024 -
       2025
       <span class="footer-info-sep rotate"></span>
-      Le Phu Duc
+      Yuki Shiroi
     </div>
     
     
@@ -854,13 +846,13 @@
       
 <div class="sidebar-author">
   <img
-    data-src="/avatar/shiba.jpg"
+    data-src="/avatar/i.jpg"
     data-sizes="auto"
-    alt="Le Phu Duc"
+    alt="Yuki Shiroi"
     class="lazyload"
   />
-  <div class="sidebar-author-name">Le Phu Duc</div>
-  <div class="sidebar-description">a.k.a Jinn</div>
+  <div class="sidebar-author-name">Yuki Shiroi</div>
+  <div class="sidebar-description">a.k.a winky</div>
 </div>
 <div class="sidebar-state">
   <div class="sidebar-state-article">
@@ -881,19 +873,19 @@
 </div>
 <div class="sidebar-social">
   
-    <div class="icon-discord sidebar-social-icon">
+    <div class="icon-email sidebar-social-icon">
       <a
-        href="https://discordapp.com/users/lephuduc"
+        href="mailto:hello@voquangvu09112006@gmail.com"
         itemprop="url"
         target="_blank"
-        aria-label="discord"
+        aria-label="email"
         rel="noopener external nofollow noreferrer"
       ></a>
     </div>
   
     <div class="icon-facebook sidebar-social-icon">
       <a
-        href="https://www.facebook.com/lephuduc0309"
+        href="https://www.facebook.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="facebook"
@@ -903,7 +895,7 @@
   
     <div class="icon-github sidebar-social-icon">
       <a
-        href="https://github.com/lephuduc"
+        href="https://github.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="github"
@@ -913,7 +905,7 @@
   
     <div class="icon-instagram sidebar-social-icon">
       <a
-        href="https://www.instagram.com/le.phuduc"
+        href="https://www.instagram.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="instagram"
@@ -921,19 +913,9 @@
       ></a>
     </div>
   
-    <div class="icon-linkedin sidebar-social-icon">
-      <a
-        href="https://www.linkedin.com/in/lephuduc"
-        itemprop="url"
-        target="_blank"
-        aria-label="linkedin"
-        rel="noopener external nofollow noreferrer"
-      ></a>
-    </div>
-  
     <div class="icon-twitter sidebar-social-icon">
       <a
-        href="https://twitter.com/lephuduck"
+        href="https://x.com/threalwinky"
         itemprop="url"
         target="_blank"
         aria-label="twitter"
@@ -961,20 +943,6 @@
     <div class="sidebar-menu-link-wrap">
       <a
         class="sidebar-menu-link-dummy"
-        href="/about"
-        aria-label="About"
-      ></a>
-      <div class='sidebar-menu-icon icon '>
-        
-          &#xe628;
-        
-      </div>
-      <div class="sidebar-menu-link">About</div>
-    </div>
-  
-    <div class="sidebar-menu-link-wrap">
-      <a
-        class="sidebar-menu-link-dummy"
         href="/archives"
         aria-label="Archives"
       ></a>
@@ -989,15 +957,15 @@
     <div class="sidebar-menu-link-wrap">
       <a
         class="sidebar-menu-link-dummy"
-        href="/achievements"
-        aria-label="Achievements"
+        href="/about"
+        aria-label="About"
       ></a>
       <div class='sidebar-menu-icon icon '>
         
-          &#xe621;
+          &#xe628;
         
       </div>
-      <div class="sidebar-menu-link">Achievements</div>
+      <div class="sidebar-menu-link">About</div>
     </div>
   
 </div>
@@ -1209,7 +1177,7 @@
 
 <script>
   if (window.firework) {
-    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"#25c01d\",\"#34ca2f\",\"#45d440\",\"#62dd62\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"#55f44d\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"#25c01d\",\"#34ca2f\",\"#45d440\",\"#62dd62\"],\"duration\":[2400,3000],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"#55f44d\"],\"duration\":[2400,3000],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":4,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
     options.excludeElements = options.excludeelements;
     delete options.excludeelements;
     window.firework(options);
@@ -1338,11 +1306,11 @@
       
       <script data-pjax>
         window.REIMU_POST = {
-          author: "Le Phu Duc",
+          author: "Yuki Shiroi",
           title: "Categories",
           url: "\/\/192.168.1.27:1313\/categories\/",
           description: "",
-          cover: "\/\/192.168.1.27:1313\/images\/newjeans3.jpg",
+          cover: "\/\/192.168.1.27:1313\/images\/banner.png",
         };
       </script>
     
@@ -1470,7 +1438,7 @@
       const ap = new APlayer({
           theme: "var(--color-link)",
           container: document.getElementById('aplayer'),
-          audio: JSON.parse("[{\"artist\":\"Lady Gaga, Bruno Mars\",\"cover\":\"/images/song_covers/die_with_a_smile.jpg\",\"lrc\":\"/songs/die_with_a_smile.lrc\",\"name\":\"Die With A Smile\",\"url\":\"/songs/die_with_a_smile.mp3\"},{\"artist\":\"NewJeans (뉴진스)\",\"cover\":\"/images/song_covers/ditto.jpg\",\"lrc\":\"/songs/ditto.lrc\",\"name\":\"Ditto\",\"url\":\"/songs/ditto.mp3\"},{\"artist\":\"Goose house\",\"cover\":\"/images/song_covers/hikarunara.jpg\",\"lrc\":\"/songs/hikarunara.lrc\",\"name\":\"光るなら\",\"url\":\"/songs/hikarunara.mp3\"},{\"artist\":\"back number\",\"cover\":\"/images/song_covers/takaneno_hanakosan.png\",\"lrc\":\"/songs/takaneno_hanakosan.lrc\",\"name\":\"高嶺の花子さん\",\"url\":\"/songs/Takaneno_Hanakosan.mp3\"}]") || [],
+          audio: JSON.parse("[{\"artist\":\"yurisa\",\"cover\":\"/songs/lemon.jpg\",\"lrc\":\"/songs/lemon.lrc\",\"name\":\"Lemon\",\"url\":\"/songs/lemon.mp3\"},{\"artist\":\"Sabrina Carpenter\",\"cover\":\"/songs/espresso.png\",\"lrc\":\"/songs/espresso.lrc\",\"name\":\"Espresso\",\"url\":\"/songs/espresso.mp3\"},{\"artist\":\"Dương Domic\",\"cover\":\"/songs/mkn.jpg\",\"lrc\":\"/songs/mkn.lrc\",\"name\":\"Mất Kết Nối\",\"url\":\"/songs/mkn.mp3\"},{\"artist\":\"Stray Kids\",\"cover\":\"/songs/twilight.jpg\",\"lrc\":\"/songs/twilight.lrc\",\"name\":\"twilight\",\"url\":\"/songs/twilight.mp3\"}]") || [],
           fixed:  null  || false,
           autoplay:  false  || false,
           loop: 'all' || 'all',

@@ -19,11 +19,11 @@
   
 
 <title>
-  404 Page not found | Le Phu Duc
+  404 Page not found | Yuki Shiroi
 </title>
 <meta
   name="description"
-  content="a.k.a Jinn"
+  content="a.k.a winky"
 />
 
 
@@ -85,31 +85,17 @@
   
 
   
-  
-  
     
-  
-
-  
-  
-  
-    
-  
-
-  
-  
-  
-
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
   rel="preload"
   as="style"
-  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7cUbuntu%20Mono:400,400italic,700,700italic%7cSource%20Code%20Pro:400,400italic,700,700italic%7cJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
 />
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7cUbuntu%20Mono:400,400italic,700,700italic%7cSource%20Code%20Pro:400,400italic,700,700italic%7cJetBrains%20Mono:400,400italic,700,700italic&amp;display=swap"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
   media="print"
   onload="this.media='all'"
 />
@@ -127,6 +113,16 @@
     crossorigin="anonymous"
   />
 
+
+
+  
+
+
+
+
+
+
+ <link rel="stylesheet" href="/css/loader.css" />
 
 
 
@@ -231,15 +227,6 @@
       <span class="main-nav-link-wrap">
         <div class='main-nav-icon icon '>
           
-            &#xe628;
-          
-        </div>
-        <a class="main-nav-link" href="/about">About</a>
-      </span>
-    
-      <span class="main-nav-link-wrap">
-        <div class='main-nav-icon icon '>
-          
             &#xe604;
           
         </div>
@@ -249,10 +236,10 @@
       <span class="main-nav-link-wrap">
         <div class='main-nav-icon icon '>
           
-            &#xe621;
+            &#xe628;
           
         </div>
-        <a class="main-nav-link" href="/achievements">Achievements</a>
+        <a class="main-nav-link" href="/about">About</a>
       </span>
     
     <a id="main-nav-toggle" class="nav-icon"></a>
@@ -268,18 +255,9 @@
   
     <picture>
       
-        
-          <source media="(max-width: 479px)" srcset="/images/newjeans3.jpg">
-        
-          <source media="(max-width: 799px)" srcset="/images/newjeans3.jpg">
-        
-          <source media="(min-width: 800px)" srcset="/images/newjeans3.jpg">
-        
-        <img fetchpriority="high" src="/images/newjeans3.jpg" alt="">
-      
     </picture>
     
-      <img src="" alt="" style="visibility: hidden;">
+      <img fetchpriority="high" src="/images/banner.png" alt="">
     
   
 
@@ -503,7 +481,7 @@
 
 <script>
   if (window.firework) {
-    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"#25c01d\",\"#34ca2f\",\"#45d440\",\"#62dd62\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"#55f44d\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"#25c01d\",\"#34ca2f\",\"#45d440\",\"#62dd62\"],\"duration\":[2400,3000],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"#55f44d\"],\"duration\":[2400,3000],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":4,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
     options.excludeElements = options.excludeelements;
     delete options.excludeelements;
     window.firework(options);
@@ -632,11 +610,11 @@
       
       <script data-pjax>
         window.REIMU_POST = {
-          author: "Le Phu Duc",
+          author: "Yuki Shiroi",
           title: "404 Page not found",
           url: "\/\/192.168.1.27:1313\/404.html",
           description: "",
-          cover: "\/\/192.168.1.27:1313\/images\/newjeans3.jpg",
+          cover: "\/\/192.168.1.27:1313\/images\/banner.png",
         };
       </script>
     
@@ -764,7 +742,7 @@
       const ap = new APlayer({
           theme: "var(--color-link)",
           container: document.getElementById('aplayer'),
-          audio: JSON.parse("[{\"artist\":\"Lady Gaga, Bruno Mars\",\"cover\":\"/images/song_covers/die_with_a_smile.jpg\",\"lrc\":\"/songs/die_with_a_smile.lrc\",\"name\":\"Die With A Smile\",\"url\":\"/songs/die_with_a_smile.mp3\"},{\"artist\":\"NewJeans (뉴진스)\",\"cover\":\"/images/song_covers/ditto.jpg\",\"lrc\":\"/songs/ditto.lrc\",\"name\":\"Ditto\",\"url\":\"/songs/ditto.mp3\"},{\"artist\":\"Goose house\",\"cover\":\"/images/song_covers/hikarunara.jpg\",\"lrc\":\"/songs/hikarunara.lrc\",\"name\":\"光るなら\",\"url\":\"/songs/hikarunara.mp3\"},{\"artist\":\"back number\",\"cover\":\"/images/song_covers/takaneno_hanakosan.png\",\"lrc\":\"/songs/takaneno_hanakosan.lrc\",\"name\":\"高嶺の花子さん\",\"url\":\"/songs/Takaneno_Hanakosan.mp3\"}]") || [],
+          audio: JSON.parse("[{\"artist\":\"yurisa\",\"cover\":\"/songs/lemon.jpg\",\"lrc\":\"/songs/lemon.lrc\",\"name\":\"Lemon\",\"url\":\"/songs/lemon.mp3\"},{\"artist\":\"Sabrina Carpenter\",\"cover\":\"/songs/espresso.png\",\"lrc\":\"/songs/espresso.lrc\",\"name\":\"Espresso\",\"url\":\"/songs/espresso.mp3\"},{\"artist\":\"Dương Domic\",\"cover\":\"/songs/mkn.jpg\",\"lrc\":\"/songs/mkn.lrc\",\"name\":\"Mất Kết Nối\",\"url\":\"/songs/mkn.mp3\"},{\"artist\":\"Stray Kids\",\"cover\":\"/songs/twilight.jpg\",\"lrc\":\"/songs/twilight.lrc\",\"name\":\"twilight\",\"url\":\"/songs/twilight.mp3\"}]") || [],
           fixed:  null  || false,
           autoplay:  false  || false,
           loop: 'all' || 'all',

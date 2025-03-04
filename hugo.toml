@@ -1,8 +1,17 @@
 baseURL = 'https://lephuduc.github.io/'
 languageCode = 'en-us'
-title = "You just landed on Jinn's site, let's find out.."
+title = "Welcome to my site. I'm winky 👋"
 theme = 'hugo-theme-reimu'
 
 [markup.highlight]
 guessSyntax = true
 noClasses = false
+
+[outputs]
+home = ["Algolia", "HTML", "RSS"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true

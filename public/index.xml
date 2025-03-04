@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>You just landed on Jinn&#39;s site, let&#39;s find out..</title>
-    <link>//192.168.1.27:1313/</link>
-    <description>Recent content on You just landed on Jinn&#39;s site, let&#39;s find out..</description>
+    <title>Welcome to my site. I&#39;m winky 👋</title>
+    <link>//192.168.1.27:1313/algolia.json</link>
+    <description>Recent content on Welcome to my site. I&#39;m winky 👋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Feb 2025 20:12:52 +0800</lastBuildDate>

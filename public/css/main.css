@@ -2,17 +2,17 @@
 :root {
   --footer-icon: url(../images/circle1.png);
   --top-icon: url(../images/circle1.png);
-  --sponsor-icon: url(../images/circle1.png);
+  --sponsor-icon: url(../images/taichi.png);
 }
 
 :root {
-  --red-0: #37d437;
-  --red-1: #5edb4e;
-  --red-2: #6fe265;
-  --red-3: #7ce97c;
-  --red-4: #9ef093;
-  --red-5: #b3f7aa;
-  --red-5-5: #092c08;
+  --red-0: #25b125;
+  --red-1: #2fb63b;
+  --red-2: #33ac28;
+  --red-3: #63ce63;
+  --red-4: #4aa03e;
+  --red-5: #6fbb65;
+  --red-5-5: #092708;
   --red-6: #e8fde7;
   --grey-9: #999;
   --grey-7: #777;
@@ -31,8 +31,8 @@
   --color-meta-shadow: var(--red-6);
   --color-hover-shadow: rgba(150, 150, 150, 0.1);
   --color-h2-after: var(--red-1);
-  --color-red-6-shadow: rgba(212, 175, 55, 0.6);
-  --color-red-3-shadow: rgba(233, 204, 124, 0.3);
+  --color-red-6-shadow: rgba(99, 235, 106, 0.6);
+  --color-red-3-shadow: rgba(167, 255, 167, 0.3);
   --highlight-nav: #e6e6e6;
   --highlight-scrollbar: #d6d6d6;
   --highlight-background: #f7f7f7;
@@ -43,13 +43,13 @@
   --highlight-red: #c8362b;
   --highlight-orange: #b66014;
   --highlight-yellow: #cb911d;
-  --highlight-green: #2ea52e;
+  --highlight-green: #1c741c;
   --highlight-aqua: #479d9d;
   --highlight-blue: #1973b8;
   --highlight-purple: #7135ac;
-  --cursor-default: url(../images/cursor/reimu-cursor-default.png), auto;
-  --cursor-pointer: url(../images/cursor/reimu-cursor-pointer.png), pointer;
-  --cursor-text: url(../images/cursor/reimu-cursor-text.png), text;
+  --cursor-default: url(../images/cursor/cursor-pointer.png), auto;
+  --cursor-pointer: url(../images/cursor/cursor-pointer.png), pointer;
+  --cursor-text: url(../images/cursor/cursor-text.png), text;
 }
 
 [data-theme="dark"]:root {
@@ -315,12 +315,8 @@ body [data-aos="zoom-in"] {
   content: "\e614";
 }
 
-.icon-reddit:before {
-  content: "\e61c";
-}
-
-.icon-discord:before {
-  content: "\e60d";
+.icon-email:before {
+  content: "\e63c";
 }
 
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
@@ -2069,7 +2065,7 @@ a, .main-nav-icon, .popup-btn-close {
 .article-entry pre,
 .article-entry code,
 .article-entry kbd {
-  font-family: "Ubuntu Mono", "Source Code Pro", "JetBrains Mono", "Menlo", "Monaco", "Consolas", "monospace";
+  font-family: "Menlo", "Monaco", "Consolas", "monospace", "Menlo", "Monaco", "Consolas", "monospace";
   font-size: 95%;
   transition: 0.3s;
   word-break: break-word;
@@ -2911,6 +2907,10 @@ a, .main-nav-icon, .popup-btn-close {
   transform: scale(1.2);
 }
 
+.icon-email {
+  color: var(--red-2);
+}
+
 .icon-github {
   color: #191717;
   transition: 1;
@@ -2934,14 +2934,6 @@ a, .main-nav-icon, .popup-btn-close {
 
 .icon-instagram {
   color: #e1306c;
-}
-
-.icon-linkedin {
-  color: #0e76a8;
-}
-
-.icon-discord {
-  color: #7289da;
 }
 
 .sidebar-menu {

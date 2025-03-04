@@ -6,46 +6,43 @@
 # for more icon information, please visit https://github.com/D-Sketon/hexo-theme-reimu/issues/30
 menu:
   - name: home
-    url:
+    url: ""
     icon: e632
-  - name: about
-    url: /about
-    icon: e628
   - name: archives
-    url: /archives
+    url: "archives"
     icon: e604
-  - name: achievements
-    url: /achievements
-    icon: e621
+  - name: about
+    url: "about"
+    icon: e628
 
 mainSections: ["post"]
-
+# 年，月，日及时间的格式化样式
 # Format style for year,month,date & time
 yearFormat: "2006"
 monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: Le Phu Duc
-description: "a.k.a Jinn"
-subtitle: "Reverse, 리버스, リバース,..."
+author: Yuki Shiroi
+description: "a.k.a winky"
+subtitle: "Just a CTF player from UIT"
 
-banner: "images/newjeans3.jpg"
+banner: "images/banner.png"
 # You can also write it in the form of the following url
 # banner: "https://example.com"
 
 # If you want to use the srcset attribute, please enable it
 banner_srcset:
-  enable: true
+  enable: false
   srcset:
-    - src: "images/newjeans3.jpg"
+    - src: "images/banner.png"
       media: "(max-width: 479px)"
-    - src: "images/newjeans3.jpg"
+    - src: "images/banner.png"
       media: "(max-width: 799px)"
-    - src: "images/newjeans3.jpg"
+    - src: "images/banner.png"
       media: "(min-width: 800px)"
 
-avatar: "shiba.jpg"
+avatar: "i.jpg"
 
 # Open Graph
 open_graph:
@@ -62,8 +59,29 @@ open_graph:
 # Content
 excerpt_link: Read More
 
+# Inject code snippet
+# Make sure your code snippet is safeHTML
+injector:
+  head_begin: # Inject code snippet right after <head>
+  head_end: # Inject code snippet right before </head>
+  body_begin: # Inject code snippet right after <body>
+  body_end: # Inject code snippet right before </body>
+  sidebar_begin: # Inject code snippet right after <aside>
+  sidebar_end: # Inject code snippet right before </aside>
+
+# Footer copyright
+# Inject code snippet right in the footer copyright
+# Make sure your code snippet is safeHTML
+copyright:
+# Need help choosing? Please see...
+# https://creativecommons.org/choose/
+# https://choosealicense.com/
+# copyright: |-
+#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+
 footer:
-  since: 2022 # 2020-current year
+  since: 2024 # 2020-current year
   powered: true
   count: true
   busuanzi: true
@@ -76,13 +94,13 @@ footer:
 sidebar: left
 
 social:
-  # email: mailto:lephuduc111@gmail.com
-  github: https://github.com/lephuduc
+  email: mailto:hello@voquangvu09112006@gmail.com
+  github: https://github.com/threalwinky
   # google: https://plus.google.com/yourname
-  twitter: https://twitter.com/lephuduck
-  facebook: https://www.facebook.com/lephuduc0309
-  instagram: https://www.instagram.com/le.phuduc
-  linkedin: https://www.linkedin.com/in/lephuduc
+  twitter: https://x.com/threalwinky
+  facebook: https://www.facebook.com/threalwinky
+  instagram: https://www.instagram.com/threalwinky
+  # linkedin: https://www.linkedin.com/in/yourname
   # pinterest: https://www.pinterest.com/yourname
   # youtube: https://www.youtube.com/channel/yourname
   # vimeo: https://vimeo.com/yourname
@@ -99,8 +117,8 @@ social:
   # stackoverflow: https://stackoverflow.com/users/yourname
   # keybase: https://keybase.io/yourname
   # telegram: https://t.me/yourname
-  discord: https://discordapp.com/users/lephuduc
-  # steam: https://steamcommunity.com/id/lephuduc
+  # discord: https://discordapp.com/users/yourname
+  # steam: https://steamcommunity.com/id/yourname
 
 widgets:
   - category
@@ -120,9 +138,9 @@ anchor_icon: # default use '#' icon, you can use a hexadecimal representation of
 reimu_cursor:
   enable: true
   cursor:
-    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
-    pointer: ../images/cursor/reimu-cursor-pointer.png
-    text: ../images/cursor/reimu-cursor-text.png
+    default: ../images/cursor/cursor-pointer.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    pointer: ../images/cursor/cursor-pointer.png
+    text: ../images/cursor/cursor-text.png
 
 icon_font: 4552607_0khxww3tj3q9
 
@@ -133,9 +151,9 @@ font:
     - Mulish
     - Noto Serif SC
   code:
-    - Ubuntu Mono
-    - Source Code Pro
-    - JetBrains Mono
+    # - Ubuntu Mono
+    # - Source Code Pro
+    # - JetBrains Mono
 
 # Local FallBack Font
 local_font:
@@ -287,9 +305,9 @@ giscus:
 
 algolia_search:
   enable: true
-  appID:
-  apiKey:
-  indexName:
+  appID: 
+  apiKey: 
+  indexName: 
   hits:
     per_page: 10
   labels:
@@ -302,9 +320,9 @@ algolia_search:
 ########################################
 
 preloader:
-  enable: false
-  text: 
-  icon: /images/loading-golden.png # default use inline svg for fast speed, you can use a image url
+  enable: true
+  text: Loading...
+  icon: /images/loading.png # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
 
 # see https://github.com/D-Sketon/aos.js
 animation:
@@ -343,7 +361,7 @@ firework:
         easing: easeOutExpo
         colors: ["#25c01d", "#34ca2f", "#45d440", "#62dd62"]
         number: 20
-        duration: [1200, 1800]
+        duration: [2400, 3000]
         shapeOptions:
           radius: [16, 32]
           alpha: [0.3, 0.5]
@@ -351,8 +369,8 @@ firework:
         move: ["diffuse"]
         easing: easeOutExpo
         colors: ["#55f44d"]
-        number: 1
-        duration: [1200, 1800]
+        number: 4
+        duration: [2400, 3000]
         shapeOptions:
           radius: 20
           alpha: [0.2, 0.5]
@@ -364,12 +382,12 @@ firework:
 
 # show the copyright below each article
 article_copyright:
-  enable: true
+  enable: false
   content:
     author: true
-    link: false
-    title: true
-    date: true
+    link: true
+    title: false
+    date: false
     updated: false
     license: true
 
@@ -405,16 +423,15 @@ icp:
 
 # Sponsor
 sponsor:
-  enable: true
-  tip: Please buy author a cup of coffee!
+  enable: false
+  tip: 请作者喝杯咖啡吧！
   icon:
-    url: "../images/circle1.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
     rotate: true
     mask: true # whether to use the images as a mask
   qr:
-    - name: buymeacoffee.com/lephuduc                
-      src: "/images/bmc_qr_lephuduc.png"
-      # url: buymeacoffee.com/lephuduc                
+    # - name: 支付宝
+    #   src: "sponsor/alipay.jpg"
     # - name: 微信
     #   src: "sponsor/wechat.png"
 
@@ -423,7 +440,7 @@ share:
   - facebook
   - twitter
   - linkedin
-  - reddit
+  # - reddit
   # - weibo
   # - qq
   # - weixin
@@ -484,26 +501,27 @@ player:
     enable: true
     options:
       audio: 
-        - name: "Die With A Smile"
-          artist: "Lady Gaga, Bruno Mars"
-          url: /songs/die_with_a_smile.mp3
-          cover: /images/song_covers/die_with_a_smile.jpg
-          lrc: /songs/die_with_a_smile.lrc
-        - name: "Ditto"
-          artist: "NewJeans (뉴진스)"
-          url: /songs/ditto.mp3
-          cover: /images/song_covers/ditto.jpg
-          lrc: /songs/ditto.lrc
-        - name: "光るなら"
-          artist: "Goose house"
-          url: /songs/hikarunara.mp3
-          cover: /images/song_covers/hikarunara.jpg
-          lrc: /songs/hikarunara.lrc
-        - name: "高嶺の花子さん"
-          artist: "back number"
-          url: /songs/Takaneno_Hanakosan.mp3
-          cover: /images/song_covers/takaneno_hanakosan.png
-          lrc: /songs/takaneno_hanakosan.lrc
+        - name: "Lemon"
+          artist: "yurisa"
+          url: /songs/lemon.mp3
+          cover: /songs/lemon.jpg
+          lrc: /songs/lemon.lrc
+        - name: "Espresso"
+          artist: "Sabrina Carpenter"
+          url: /songs/espresso.mp3
+          cover: /songs/espresso.png
+          lrc: /songs/espresso.lrc
+        - name: "Mất Kết Nối"
+          artist: "Dương Domic"
+          url: /songs/mkn.mp3
+          cover: /songs/mkn.jpg
+          lrc: /songs/mkn.lrc
+        - name: "twilight"
+          artist: "Stray Kids"
+          url: /songs/twilight.mp3
+          cover: /songs/twilight.jpg
+          lrc: /songs/twilight.lrc
+      
       fixed: 
       mini: false
       autoplay: false
